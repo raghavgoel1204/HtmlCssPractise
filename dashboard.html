@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+    <style>
+        body{
+            margin: 0;
+        }
+        nav{
+            display: flex;
+            background-color: black;
+
+        }
+        nav .menu-btn {
+                        color: white;
+                        padding: 15px 20px;
+                        text-decoration: none;
+                        text-align: center;
+                      }
+        nav .menu-btn:hover {
+                    background-color: #ddd;
+                    color: black;
+                            }
+
+        .banner
+        {
+            display: flex;
+            background-color: #00ADB5;
+        }
+        .bannerinside
+        {
+         display: flex;
+         flex-direction: column;
+        }
+        .logo
+        {
+            width: 400px;
+        }
+        .logotext1
+        {
+            font-family: cursive;
+            font-size: 34px;
+            color: white;
+            font-style: italic;
+            padding-top: 10px;
+            padding-left: 20px;
+        }
+        main {
+            flex: 100%;
+            background-color: white;
+            }
+         .one
+         {
+             font-family: cursive;
+             padding-left: 400px;
+             padding-top: 20px;
+             font-size: 20px;
+         }  
+         .feature1
+         {
+            display: flex;
+            margin-left: 100px;
+            margin-right: 100px;
+            margin-top: 50px;
+            margin-bottom: 50px;
+         } 
+         .htext
+         {
+             margin-top: 20px;
+             display: flex;
+             flex-direction: column;
+         }
+         .fsol
+         {
+             width: 500px;
+         }
+         .fsol1
+         {
+             width: 400px;
+         }
+         .fsolt
+         {
+             font-family: cursive;
+             font-size: 20px;
+             padding-top: 40px;
+         }
+         .btnD
+         {
+            display: flex;
+            width: 800px;
+            height: 200px;
+            background-color: #00ADB5;
+         }
+         .download
+         {
+             display: flex;
+            width: 300px;
+            height: 80px; 
+            background-color:white;
+            border-radius: 20px;
+
+         }
+         .dlogo
+         {
+            width: 60px;
+            margin-top: 5px;
+            margin-left: 5px;
+         }
+         .dlogo1
+         {
+            width: 80px;
+            margin-top: 5px;
+            margin-left: 5px;
+         }
+         button
+         {
+              width: 700px;
+              height: 100px; 
+              margin-left: 50px; 
+              margin-top: 50px;
+              background-color:#00ADB5 ;
+              border: none;
+              border-color: #39A2DB;
+              border-radius: 20;
+              cursor: pointer;
+         }
+         .dtext
+         {
+            margin-left: 20px;
+            margin-top: 10px;
+            font-family: cursive;
+            font-size: 20px;
+         }
+         .different
+         {
+             display: flex;
+             flex-direction: column;
+            width:100%;
+            height: 400px;
+            background-color: #FFA900;
+            text-align: center;
+            font-family: cursive;
+            font-size: 20px;
+            color: white;
+         }
+         .box
+         {
+             width: 300px;
+             height: 200px;
+             background:white;
+             margin-top: 50px;
+             margin-left: 100px;
+             
+             
+         }
+         .boxes
+         {
+             display: flex;
+             flex-wrap: wrap;
+         }
+         .boxes h1
+         {
+            color: black;
+         }
+         .boxes p
+         {
+            color: black;
+         }
+         .f
+         {
+            width: 100%;
+            height: 300px;
+            display: flex;
+            background-color: black ;
+         }
+         .fimg
+         {
+             display: flex; 
+         }
+         .fimg a:hover
+         {
+            cursor: pointer;
+         }
+         .i{
+          width: 40px; 
+          margin-left:10px ; 
+          
+         }
+         .of
+         {
+            display: flex;
+            flex-direction: column;
+            color: white;
+            font-family: cursive;
+            font-size: 15px;
+         }
+         .of h1 
+         {
+             margin-left: 10px;
+             margin-top: 80px;
+         }
+         .tf 
+         {
+            margin-top: 60px;
+         }
+         .tf ul li
+         {
+             list-style: none;
+             color: white;
+             size: 10px;
+             display: flex;
+             flex-direction: column;
+             margin-top: 10px;
+             margin-left: 20px;
+         }
+         .form
+         {
+             color: white;
+             font-family: cursive;
+             font-size: 10px;
+             margin-top: 30px;
+             margin-left: 40px;
+         }
+         input[type=submit] {
+            background-color: orange;
+            border: none;
+            text-decoration: none;
+            color: white;
+            padding: 20px 20px;
+            margin: 20px 20px;
+            cursor: pointer;
+         }
+         .femail 
+         {
+            color: white;
+             font-family: cursive;
+             font-size: 20px;
+             display: flex;
+             flex-direction: column;
+
+         }
+         .mail
+         {
+             margin-left: 100px;
+             margin-top: 60px;
+             width: 300px;
+         }
+    </style>
+    <title>SAP-KIET | Home </title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a class="menu-btn" href="#">Home</a>
+            <a class="menu-btn" href="#">About</a>
+            <a class="menu-btn" href="#">Team</a>
+            <a class="menu-btn" href="#">Features</a>
+            <a class="menu-btn" href="#">Help</a>
+        </nav>
+        <div class="banner">
+            <img src="logo.jpeg" alt="LOGO" class="logo">
+            <div class="bannerinside">
+                <p class="logotext1"><b>KIET Socio-Academic Portal</b></p>
+            <div class="btnD">
+                <button >
+                    <div class="download">
+                        <img src="playstore.png" alt="" class="dlogo">
+                        <p class="dtext">Get It on <br>Google Play Store</p>
+                    </div>
+                      
+                </button> 
+                <button >
+                  <div class="download">
+                      <img src="alogo.png" alt="" class="dlogo1">
+                      <p class="dtext">Download on  the<br>App Store</p>
+                  </div>
+                    
+              </button>     
+              </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="one">
+            <p class="motivation">"Nothing is particularly hard if you divide it into small jobs."</p>
+        </section>
+        <section class="feature1">
+            <img src="Quora.jpg" alt="" class="fsol">
+            <div class="htext">
+                <h1>Ask Your Doubts</h1>   
+                <p class="fsolt">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam voluptates temporibus corporis natus. Sed facilis atque blanditiis vero ipsa laboriosam, nisi tenetur quae cumque. Alias magnam placeat reprehenderit laudantium iste?</p>
+            </div>
+        </section>
+        <section class="feature1">
+            <div class="htext">
+                <h1>InterView Experiences</h1>   
+                <p class="fsolt">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam voluptates temporibus corporis natus. Sed facilis atque blanditiis vero ipsa laboriosam, nisi tenetur quae cumque. Alias magnam placeat reprehenderit laudantium iste?</p>
+            </div>
+            
+            <img src="Interview.jpg" alt="" class="fsol1">
+        </section>
+        <section class="feature1">
+            <img src="carrierpages.jpg" alt="" class="fsol">
+            <div class="htext">
+                <h1>Carrier Pages </h1>   
+                <p class="fsolt">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam voluptates temporibus corporis natus. Sed facilis atque blanditiis vero ipsa laboriosam, nisi tenetur quae cumque. Alias magnam placeat reprehenderit laudantium iste?</p>
+            </div>
+        </section>
+        <section >
+
+            <div class="different">
+                <h1>Our Differentiator</h1>
+                <div class="boxes">
+                    <div class="box">
+                        <h1> Time Saving</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, enim?</p>
+                    </div>
+                    <div class="box">
+                        <h1 >Learing from Experience</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur </p>
+                        
+                    </div>
+                    <div class="box">
+                        <h1>Coustomized Quora</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>  
+        
+
+    </main>
+    <footer>
+        <div class="f">
+            <div class="of">
+                <h1>SAP-Kiet</h1>
+                <div class="fimg">
+                    <a href="#"><img src="facebook.png" alt="" class="i"></a>
+                    <a href="#"><img src="twitter.png" alt="" class="i"></a>
+                    <a href="#"><img src="linkedin.png" alt="" class="i"></a>
+                    <a href="#"><img src="instagram.png" alt="" class="i"></a>
+                </div>
+            </div>
+            <div class="tf">
+                <ul>
+                    <a href="#"><li>About</li></a>
+                    <a href="#"><li>Services</li></a>
+                    <a href="#"><li>team</li></a>
+                    <a href="#"><li>Objective</li></a>
+                </ul>   
+            </div>
+            <div class="tf">
+                <ul>
+                    <a href="#"><li>Support</li></a>
+                    <a href="#"><li>Privacy Policies</li></a>
+                    <a href="#"><li>Terms and Conditions</li></a>
+                    <a href="#"><li>Webinar</li></a>
+                </ul>   
+            </div>
+            <div class="form">
+            <h1>Stay up to Date on the <br>latest from SAP-KIET</h1>
+            <div class="femail">
+                <form>
+                <label>Email</label>
+                <input type="email"></div>
+                <input type="submit" Value="Subscribe">
+                </form>
+            </div>
+            <div>
+                <img src="mail.jpg" alt="" class="mail">
+             </div>   
+        </div>
+    </footer>
+</body>
+</html>
